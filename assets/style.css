@@ -1,0 +1,244 @@
+.content_top {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.header_top_logo {
+
+    width: 15%;
+    text-align: center;
+}
+
+.header_top_painel a,
+.header_top_logo a {
+    width: 100%;
+    font-size: 0.8em;
+    color: black;
+    font-weight: 500;
+}
+
+.header_top_logo a:hover {
+    text-decoration: underline;
+}
+
+.header_top_logo a h1 {
+    font-weight: 500;
+}
+
+.header_top_painel {
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+}
+
+.header_top_painel a {
+    width: 100%;
+}
+
+.setKey {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ccc;
+}
+
+.callSetKey {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.setKeyHeader {
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.setKeyHeader button {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fbfbfb;
+    border: 1px solid #09c;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    transition: .3s;
+}
+
+.setKeyHeader button:hover {
+    background-color: #09c;
+    color: #fbfbfb;
+}
+
+/* CALL SET KEY */
+.callSetKey {
+    width: 100%;
+    display: flex;
+
+    margin-bottom: 15px;
+}
+
+.callSetKey .callSetKeySection {
+    width: 70%;
+    display: flex;
+}
+
+.callSetKey .callSetKeySection .callSetKeySee {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+}
+
+.callSetKey .callSetKeySection .callSetKeySee .one {
+    width: 100%;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #888;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+.callSetKey .callSetKeySection .callSetKeySee .two {
+    width: 100%;
+    font-weight: bold;
+    color: #888;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.callSetKey .callSetKeySection .callSetKeySee .two>small {
+    font-size: 2em;
+}
+
+.callSetKey .callSetKeySection .callSetKeySee .two>b {
+    font-size: 6em;
+}
+
+.callSetKey .callSetKeySection .callSetKeySee .tree {
+    width: 100%;
+    font-size: 1em;
+    font-weight: bold;
+    color: #888;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px 0;
+}
+
+.callSetKey .callSetKeys {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgb(224, 217, 217);
+}
+
+.callSetKey .callSetKeys .callSetKeysSee {
+    width: 100%;
+    background-color: #fbfbfb;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 0;
+}
+
+.callSetKey .callSetKeys .callSetKeysSee .callSetKeysSees {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.callSetKey .callSetKeys .callSetKeysSee .callSetKeysSees p {
+    padding: 15px;
+    font-size: 1.1em;
+}
+
+.callSetKey .callSetKeys .callSetKeysSee .callSetKeysSeesTwo {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: #000;
+    color: #fbfbfb;
+}
+
+.callSetKey .callSetKeys .callSetKeysSee .callSetKeysSeesTwo .one {
+    width: 100%;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+    padding: 2px;
+}
+
+.callSetKey .callSetKeys .callSetKeysSee .callSetKeysSeesTwo .two {
+    width: 100%;
+    font-size: 0.9em;
+    font-weight: 500;
+    text-align: center;
+}
+
+.callSetKey .callSetKeys .callSetKeysSee .callSetKeysSeebtn {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.callSetKey .callSetKeys .callSetKeysSee .callSetKeysSeebtn button {
+    width: 50%;
+    padding: 10px;
+    color: #fff;
+    background-color: #09c;
+    border: none;
+    cursor: pointer;
+}
+.callSetKey .callSetKeys .callSetKeysSee .callSetKeysSeebtn button.cancel {
+    
+    background-color: #000;
+    
+}
+.callSetKey .callSetKeys .callSetKeysSee .callSetKeysSeebtn button:hover{
+    background-color: rgb(73, 40, 40);
+    color: #fbfbfb;
+}
+
+@media(max-width: 1155px) {
+    .callSetKey .callSetKeySection {
+        width: 60%;
+    }
+
+    .callSetKey .callSetKeys {
+
+        width: 40%;
+    }
+}
+
+@media(max-width: 780px) {
+
+    .callSetKey .callSetKeys .callSetKeysSee .callSetKeysSees {
+        width: 40%;
+    }
+
+    .callSetKey .callSetKeys .callSetKeysSee .callSetKeysSeesTwo {
+
+        width: 60%;
+    }
+}
+
+@media(max-width: 600px) {
+
+    .callSetKey .callSetKeySection,
+    .callSetKey .callSetKeys {
+        width: 100%;
+    }
+
+}
