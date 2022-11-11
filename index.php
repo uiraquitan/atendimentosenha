@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/boot.css">
@@ -23,6 +22,9 @@
                 </div>
 
                 <div class="header_top_painel">
+                    <a href="call.php">Chamar senha</a>
+                </div>
+                <div class="header_top_painel">
                     <a href="">Login</a>
                 </div>
 
@@ -31,12 +33,15 @@
     </header>
     <main class="container">
         <div class="content">
+            <span id="msgAlert"></span>
+        </div>
+        <div class="content">
 
             <div class="setKey">
 
                 <div class="setKeyHeader">
-                    <button type="button" onclick="gerarSenha(1)">Preferencial</button>
-                    <button type="button" onclick="gerarSenha(2)">Física</button>
+                    <button type="button" onclick="gerarSenha(1)">Convencional</button>
+                    <button type="button" onclick="gerarSenha(2)">Preferencial</button>
                 </div>
 
                 <!-- SECTION CREATE KEY -->

@@ -23,6 +23,10 @@
                 </div>
 
                 <div class="header_top_painel">
+                    <a href="index.php">Chamar senha</a>
+                </div>
+
+                <div class="header_top_painel">
                     <a href="">Login</a>
                 </div>
 
@@ -33,10 +37,12 @@
         <div class="content">
 
             <div class="setKey">
-
+                <div class="content">
+                    <span id="msgAlert"></span>
+                </div>
                 <div class="setKeyHeader">
-                    <button>Preferencial</button>
-                    <button>Física</button>
+                    <button type="button" onclick="gerarSenha(1)">Convencional</button>
+                    <button type="button" onclick="gerarSenha(2)">Preferencial</button>
                 </div>
 
                 <!-- SECTION CREATE KEY -->
@@ -47,60 +53,14 @@
                         <div class="callSetKeySee">
                             <p class="one">Mesa 5</p>
                             <p class="one">Nome: Uiraquitan</p>
-                            <p class="two"> <small>Senha</small> <b>P2</b></p>
+                            <p class="two"> <small>Senha</small> <b id="callSetKeySeeTwo"></b></p>
                             <p class="tree">15:15 09/11/2022</p>
                         </div>
 
                     </div>
-                    <div class="callSetKeys">
+                    <div class="callSetKeys" id="callSetKeys">
+                    
 
-                        <div class="callSetKeysSee">
-                            <div class="callSetKeysSees">
-                                <p class="one">Mesa 7</p>
-                            </div>
-                            <div class="callSetKeysSeesTwo">
-
-                                <p class="one"> <small>Senha</small> <b>J8</b></p>
-                                <p class="two">15:15 09/11/2022</p>
-
-                            </div>
-                            <div class="callSetKeysSeebtn">
-                                <button>Chamar</button>
-                                <button class="cancel">Cancelar</button>
-                            </div>
-                        </div>
-
-                        <div class="callSetKeysSee">
-                            <div class="callSetKeysSees">
-                                <p class="one">Mesa 7</p>
-                            </div>
-                            <div class="callSetKeysSeesTwo">
-
-                                <p class="one"> <small>Senha</small> <b>J8</b></p>
-                                <p class="two">15:15 09/11/2022</p>
-
-                            </div>
-                            <div class="callSetKeysSeebtn">
-                                <button>Chamar</button>
-                                <button class="cancel">Cancelar</button>
-                            </div>
-                        </div>
-
-                        <div class="callSetKeysSee">
-                            <div class="callSetKeysSees">
-                                <p class="one">Mesa 7</p>
-                            </div>
-                            <div class="callSetKeysSeesTwo">
-
-                                <p class="one"> <small>Senha</small> <b>J8</b></p>
-                                <p class="two">15:15 09/11/2022</p>
-
-                            </div>
-                            <div class="callSetKeysSeebtn">
-                                <button>Chamar</button>
-                                <button class="cancel">Cancelar</button>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <!-- END SECTION CREATE KEY -->
@@ -112,7 +72,7 @@
 
                         <div class="callSetKeySee">
                             <p class="one">Mesa 5</p>
-                            <p class="two"> <small>Senha</small> <b>P2</b></p>
+                            <p class="two"> <small>Senha</small> <b id="callSetKeySeeTwo"></b></p>
                             <p class="tree">15:15 09/11/2022</p>
                         </div>
 
@@ -136,7 +96,7 @@
                             </div>
                             <div class="callSetKeysSeesTwo">
 
-                                <p class="one"> <small>Senha</small> <b>J8</b></p>
+                                <p class="one"> <small>Senha</small> <b id="callSetKeySeeTwo"></b></p>
                                 <p class="two">15:15 09/11/2022</p>
 
                             </div>
@@ -186,6 +146,7 @@
         </div>
     </main>
     <footer></footer>
+    <script src="./script.js"></script>
 
 </body>
 
